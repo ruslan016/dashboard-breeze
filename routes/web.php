@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CountryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::redirect('/','login');
+Route::get('dashboard',[CountryController::class, 'index']);
+Route::post('dashboard',[CountryController::class, 'store']);
+Route::get('fetch-countries',[CountryController::class, 'show']);
+Route::get('edit-country/{id}',[CountryController::class, 'edit']);
+Route::put('update-country/{id}',[CountryController::class, 'update']);
 
 
 Route::get('/dashboard', function () {
