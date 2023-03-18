@@ -11,6 +11,7 @@
         "php": "^7.3",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
+        "geoip2/geoip2": "^2.13",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/breeze": "1.9.2",
         "laravel/framework": "^8.0",

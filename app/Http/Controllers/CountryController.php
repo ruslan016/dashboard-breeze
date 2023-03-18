@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\Validator;
 
 class CountryController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('IsraelOnly');
+    }
+
     /**
      * Display a listing of the resource.
      *
